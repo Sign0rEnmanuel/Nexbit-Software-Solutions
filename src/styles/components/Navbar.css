@@ -1,0 +1,99 @@
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: var(--color-neutral-tertiary);
+    padding: 0 20px;
+    border-bottom: 4px solid transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: border-bottom-color 0.15s ease;
+}
+
+.header:hover {
+    border-bottom-color: var(--color-accent);
+}
+
+.header-logo {
+    width: 400px;
+    height: 100%;
+}
+
+.header-nav-link,
+.header-nav-lw {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-button,
+.wht-button,
+.header-nav-lw select {
+    background-color: transparent;
+    font-family: var(--font-pixel-first);
+    color: var(--color-neutral-primary);
+    border: 3px solid var(--color-neutral-secondary);
+    cursor: pointer;
+    transition:
+        color 0.05s ease,
+        border-color 0.05s ease,
+        transform 0.05s ease,
+        box-shadow 0.05s ease,
+        text-shadow 0.05s ease;
+}
+
+.nav-button,
+.wht-button {
+    font-size: 11px;
+    padding: 12px 24px;
+    letter-spacing: 1px;
+}
+
+.nav-button:hover,
+.wht-button:hover {
+    color: var(--color-accent);
+    border-color: var(--color-neutral-primary);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 0 var(--color-neutral-secondary);
+    text-shadow: 0 0 10px var(--color-neutral-secondary);
+}
+
+.nav-button:active,
+.wht-button:active {
+    transform: translate(0, 0);
+    box-shadow: none;
+}
+
+.header-nav-lw select {
+    font-size: 10px;
+    padding: 10px 16px;
+    appearance: none;
+}
+
+.header-nav-lw select:hover {
+    color: var(--color-accent);
+    border-color: var(--color-neutral-primary);
+}
+
+.header-nav-lw select option {
+    background-color: var(--color-neutral-tertiary);
+    color: var(--color-neutral-primary);
+}
+
+.wht-button {
+    background-color: var(--color-secondary);
+    color: var(--color-neutral-primary);
+    font-family: var(--font-pixel-first);
+}
+
+.wht-button:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-neutral-tertiary);
+    box-shadow: 5px 5px 0 #00d4aa9d;
+    text-shadow: 0 0 10px #00d4aa9d;
+}

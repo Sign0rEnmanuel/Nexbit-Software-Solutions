@@ -9,7 +9,12 @@
     --color-secondary: #7c3aed;
     --color-tertiary: #f59e0b;
     --color-accent: #00d4aa;
-    --font-pixels: "Press Start 2P", system-ui;
+    --color-neutral-primary: #ffffff;
+    --color-neutral-secondary: #9aa0a8;
+    --color-neutral-tertiary: #0d1117;
+    --font-pixel-first: "Press Start 2P", system-ui;
+    --font-pixel-second: "Pixelify Sans", sans-serif;
+    --font-pixel-third: "VT323", monospace;
 }
 
 html,
@@ -17,7 +22,18 @@ body {
     width: 100%;
     min-height: 100dvh;
     background-color: var(--color-primary);
-    font-family: var(--font-pixels);
+    font-family: var(--font-pixel-third);
+    image-rendering: pixelated;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    width: 100%;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;

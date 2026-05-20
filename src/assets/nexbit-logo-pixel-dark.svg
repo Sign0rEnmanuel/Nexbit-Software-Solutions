@@ -1,0 +1,97 @@
+<svg shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" height="160" width="500">
+  <rect fill="#0d1117" rx="12" height="160" width="500"></rect>
+
+  
+  <rect fill="#1a6fff" height="4" width="80" y="20" x="20"></rect>
+  <rect fill="#1a6fff" height="112" width="88" y="24" x="16"></rect>
+  <rect fill="#1a6fff" height="4" width="80" y="136" x="20"></rect>
+
+  
+  <rect fill="white" height="80" width="8" y="40" x="28"></rect>
+
+  
+  <rect fill="white" height="80" width="8" y="40" x="84"></rect>
+
+  
+  <rect opacity="0.3" fill="white" height="8" width="8" y="40" x="36"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="48" x="36"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="48" x="44"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="56" x="36"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="56" x="44"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="56" x="52"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="64" x="36"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="64" x="44"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="64" x="52"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="64" x="60"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="72" x="36"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="72" x="44"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="72" x="52"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="72" x="60"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="72" x="68"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="80" x="36"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="80" x="44"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="80" x="52"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="80" x="60"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="80" x="68"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="80" x="76"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="88" x="36"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="88" x="44"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="88" x="52"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="88" x="60"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="88" x="68"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="96" x="36"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="96" x="44"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="96" x="52"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="96" x="60"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="104" x="36"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="104" x="44"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="104" x="52"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="112" x="36"></rect>
+  <rect opacity="0.3" fill="white" height="8" width="8" y="112" x="44"></rect>
+
+  
+  <rect opacity="0.6" fill="white" height="8" width="48" y="76" x="36"></rect>
+
+  
+  <rect fill="#f0f4ff" height="64" width="8" y="48" x="128"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="56" x="136"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="64" x="144"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="72" x="152"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="80" x="160"></rect>
+  <rect fill="#f0f4ff" height="64" width="8" y="48" x="168"></rect>
+
+  <rect fill="#f0f4ff" height="64" width="8" y="48" x="188"></rect>
+  <rect fill="#f0f4ff" height="8" width="32" y="48" x="196"></rect>
+  <rect fill="#f0f4ff" height="8" width="24" y="76" x="196"></rect>
+  <rect fill="#f0f4ff" height="8" width="32" y="104" x="196"></rect>
+
+  <rect fill="#f0f4ff" height="24" width="8" y="48" x="240"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="64" x="248"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="72" x="256"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="64" x="264"></rect>
+  <rect fill="#f0f4ff" height="24" width="8" y="48" x="272"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="80" x="248"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="80" x="264"></rect>
+  <rect fill="#f0f4ff" height="24" width="8" y="88" x="240"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="88" x="248"></rect>
+  <rect fill="#f0f4ff" height="8" width="8" y="88" x="264"></rect>
+  <rect fill="#f0f4ff" height="24" width="8" y="88" x="272"></rect>
+
+  <rect fill="#f0f4ff" height="64" width="8" y="48" x="292"></rect>
+  <rect fill="#f0f4ff" height="8" width="24" y="48" x="300"></rect>
+  <rect fill="#f0f4ff" height="16" width="8" y="56" x="324"></rect>
+  <rect fill="#f0f4ff" height="8" width="24" y="72" x="300"></rect>
+  <rect fill="#f0f4ff" height="16" width="8" y="80" x="324"></rect>
+  <rect fill="#f0f4ff" height="8" width="24" y="96" x="300"></rect>
+  <rect fill="#f0f4ff" height="8" width="24" y="104" x="300"></rect>
+
+  <rect fill="#f0f4ff" height="8" width="32" y="48" x="348"></rect>
+  <rect fill="#f0f4ff" height="48" width="8" y="56" x="360"></rect>
+  <rect fill="#f0f4ff" height="8" width="32" y="104" x="348"></rect>
+
+  <rect fill="#f0f4ff" height="8" width="40" y="48" x="396"></rect>
+  <rect fill="#f0f4ff" height="56" width="8" y="56" x="412"></rect>
+
+  
+  <text letter-spacing="3" fill="rgba(255,255,255,0.35)" font-size="11" font-family="'Courier New', monospace" y="140" x="128">SOFTWARE SOLUTIONS</text>
+</svg>
