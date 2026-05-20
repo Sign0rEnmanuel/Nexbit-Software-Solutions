@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #1a6fff;
+    --color-secondary: #7c3aed;
+    --color-tertiary: #f59e0b;
+    --color-accent: #00d4aa;
+    --font-pixels: "Press Start 2P", system-ui;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--color-primary);
+    font-family: var(--font-pixels);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

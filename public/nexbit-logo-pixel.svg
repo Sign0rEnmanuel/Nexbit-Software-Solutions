@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <!-- Background rounded-ish square in pixel style -->
+  <rect x="1" y="0" width="18" height="1" fill="#1a6fff"/>
+  <rect x="0" y="1" width="20" height="18" fill="#1a6fff"/>
+  <rect x="1" y="19" width="18" height="1" fill="#1a6fff"/>
+
+  <!-- Left bar -->
+  <rect x="3" y="4" width="2" height="12" fill="#ffffff"/>
+
+  <!-- Right bar -->
+  <rect x="15" y="4" width="2" height="12" fill="#ffffff"/>
+
+  <!-- Arrow/play triangle pixels -->
+  <rect x="5" y="4" width="1" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="5" y="5" width="2" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="5" y="6" width="3" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="5" y="7" width="4" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="5" y="8" width="5" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="5" y="9" width="6" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="5" y="10" width="5" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="5" y="11" width="4" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="5" y="12" width="3" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="5" y="13" width="2" height="1" fill="#ffffff" opacity="0.3"/>
+  <rect x="5" y="14" width="1" height="1" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Horizontal line (center) -->
+  <rect x="5" y="9" width="10" height="2" fill="#ffffff" opacity="0.5"/>
+</svg>
