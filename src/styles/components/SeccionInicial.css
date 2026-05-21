@@ -1,0 +1,297 @@
+.main-section-initial {
+    width: 100%;
+    height: calc(100vh - 120px);
+    position: relative;
+}
+
+.main-section-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+}
+
+.initial-content {
+    width: 100%;
+    height: 100%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    position: relative;
+    z-index: 900;
+}
+
+.initial-left {
+    flex: 1;
+    max-width: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.initial-right {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nss-logo {
+    position: relative;
+    width: 330px;
+    height: 460px;
+}
+
+.nss-letter {
+    position: absolute;
+    font-family: var(--font-pixel-first);
+    font-size: 250px;
+    line-height: 1;
+    color: var(--color-secondary);
+    text-shadow:
+        1px 1px 0 #6e33d4,
+        2px 2px 0 #6029bb,
+        3px 3px 0 #521fa2,
+        4px 4px 0 #450f88,
+        5px 5px 0 #360070,
+        6px 6px 0 #280058,
+        7px 7px 0 #1a0040,
+        8px 8px 0 #0c0028,
+        9px 9px 0 #060018,
+        10px 10px 0 #020008;
+    animation:
+        nss-float 2.5s steps(5) infinite,
+        nss-flicker 6s steps(1) infinite;
+}
+
+.nss-n {
+    top: 0;
+    left: 0;
+    animation-delay: 0s, 0s;
+}
+
+.nss-s1 {
+    top: 120px;
+    left: 95px;
+    animation-delay: 0.3s, 1.8s;
+}
+
+.nss-s2 {
+    top: 240px;
+    left: 190px;
+    animation-delay: 0.6s, 3.6s;
+}
+
+.hero-label {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.hero-label .cursor {
+    width: 14px;
+    height: 20px;
+    display: inline-block;
+    background-color: var(--color-accent);
+    vertical-align: middle;
+}
+
+.hero-label .blink_ {
+    color: var(--color-accent);
+    animation: blink 1s step-end infinite;
+}
+
+.hero-label .nexbit {
+    color: var(--color-accent);
+}
+
+h1 {
+    color: var(--color-neutral-primary);
+    font-family: var(--font-pixel-first);
+    line-height: 1.4;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+h1 .initial-h1-span {
+    color: var(--color-neutral-secondary);
+}
+
+h1 .animation {
+    color: var(--color-accent);
+    text-shadow: 0 0 20px var(--color-accent);
+}
+
+h1 .animation:hover {
+    animation: glitch 1s infinite;
+}
+
+.hero-content {
+    max-width: 800px;
+    color: var(--color-neutral-secondary);
+    font-size: 21px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.hero-actions .btn {
+    color: var(--color-neutral-primary);
+    font-family: var(--font-pixel-second);
+    padding: 12px 24px;
+    border: 3px solid var(--color-neutral-secondary);
+    font-size: 21px;
+    letter-spacing: 1px;
+    background-color: var(--color-primary);
+}
+
+.hero-actions .btn-primary {
+    transition:
+        background-color 0.05s ease,
+        color 0.05s ease,
+        border-color 0.05s ease,
+        transform 0.05s ease,
+        box-shadow 0.05s ease;
+}
+
+.hero-actions .btn-primary:hover {
+    background-color: var(--color-accent);
+    color: var(--color-neutral-tertiary);
+    border-color: var(--color-accent);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 0 #00d4aa9d;
+}
+
+.hero-actions .btn-secondary {
+    transition:
+        background-color 0.05s ease,
+        color 0.05s ease,
+        border-color 0.05s ease,
+        transform 0.05s ease,
+        box-shadow 0.05s ease;
+}
+
+.hero-actions .btn-secondary:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-neutral-primary);
+    border-color: var(--color-secondary);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 0 #7c3aed9d;
+}
+
+@keyframes nss-float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+@keyframes nss-flicker {
+    0%,
+    88%,
+    91%,
+    94%,
+    100% {
+        opacity: 1;
+    }
+    89%,
+    90% {
+        opacity: 0.08;
+    }
+    92%,
+    93% {
+        opacity: 0.5;
+    }
+    95% {
+        opacity: 0.15;
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow:
+            4px 0 var(--color-primary),
+            -4px 0 var(--color-secondary);
+        transform: translate(0);
+    }
+    10% {
+        text-shadow:
+            -5px 0 var(--color-primary),
+            5px 0 var(--color-secondary);
+        transform: translate(-3px, 1px) skewX(3deg);
+    }
+    20% {
+        text-shadow:
+            5px 0 var(--color-primary),
+            -5px 0 var(--color-secondary);
+        transform: translate(3px, -1px) skewX(-2deg);
+    }
+    30% {
+        text-shadow: none;
+        transform: translate(0);
+    }
+    40% {
+        text-shadow:
+            -6px 0 var(--color-primary),
+            6px 0 var(--color-secondary);
+        transform: translate(-4px) skewX(4deg);
+    }
+    50% {
+        text-shadow:
+            6px 0 var(--color-primary),
+            -6px 0 var(--color-secondary);
+        transform: translate(4px) skewX(-4deg);
+    }
+    60% {
+        text-shadow: none;
+        transform: translate(0);
+    }
+    70% {
+        text-shadow:
+            3px 0 var(--color-primary),
+            -3px 0 var(--color-secondary);
+        transform: translate(2px, 1px);
+    }
+    85% {
+        text-shadow:
+            -3px 0 var(--color-primary),
+            3px 0 var(--color-secondary);
+        transform: translate(-2px) skewX(2deg);
+    }
+    100% {
+        text-shadow:
+            4px 0 var(--color-primary),
+            -4px 0 var(--color-secondary);
+        transform: translate(0);
+    }
+}

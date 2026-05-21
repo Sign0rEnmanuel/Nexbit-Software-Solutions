@@ -21,14 +21,12 @@ html,
 body {
     width: 100%;
     min-height: 100dvh;
-    background-color: var(--color-primary);
+    overflow-x: hidden;
+    background-color: var(--color-neutral-tertiary);
+    color: var(--color-neutral-primary);
     font-family: var(--font-pixel-third);
     image-rendering: pixelated;
     text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #root {
@@ -36,6 +34,4 @@ body {
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
