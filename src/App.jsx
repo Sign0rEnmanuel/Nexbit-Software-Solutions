@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Inicio from "./page/Inicio";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -12,6 +13,7 @@ export default function App() {
                 <Route path="/projects" element={<h1>Proyectos</h1>} />
                 <Route path="/aboutus" element={<h1>Sobre Nosotros</h1>} />
             </Routes>
+            <Footer />
         </Router>
     );
 }

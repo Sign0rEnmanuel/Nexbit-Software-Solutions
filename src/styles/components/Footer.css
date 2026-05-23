@@ -1,0 +1,135 @@
+.footer {
+    width: 100%;
+    min-height: 200px;
+    background-color: var(--color-neutral-tertiary);
+    border-top: 3px solid var(--color-primary);
+    box-shadow: 0 -6px 24px rgba(26, 111, 255, 0.15);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+.footer-bg-logo {
+    position: absolute;
+    width: 520px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.05;
+    filter: invert(1) brightness(2);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-logo {
+    height: 55px;
+    width: auto;
+}
+
+.footer-text {
+    font-family: var(--font-pixel-first);
+    font-size: 10px;
+    color: var(--color-neutral-secondary);
+    line-height: 2.2;
+    letter-spacing: 1px;
+}
+
+.footer-madewithlove {
+    font-family: var(--font-pixel-third);
+    font-size: 20px;
+    color: var(--color-neutral-secondary);
+}
+
+.footer-madewithlove a {
+    color: var(--color-accent);
+    text-decoration: none;
+    text-shadow: 0 0 8px var(--color-accent);
+    transition:
+        color 0.05s ease,
+        text-shadow 0.05s ease;
+}
+
+.footer-madewithlove a:hover {
+    color: var(--color-primary);
+    text-shadow: 0 0 14px var(--color-primary);
+}
+
+.footer-gif-donghastling {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.footer-gif-donghastling img {
+    display: block;
+    height: 160px;
+    width: auto;
+    image-rendering: pixelated;
+    border: 3px solid var(--color-primary);
+    box-shadow:
+        5px 5px 0 var(--color-secondary),
+        0 0 22px rgba(26, 111, 255, 0.45);
+    animation: gif-flicker 5s steps(1) infinite;
+}
+
+.footer-gif-donghastling::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.18) 2px,
+        rgba(0, 0, 0, 0.18) 4px
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes gif-flicker {
+    0%,
+    87%,
+    91%,
+    96%,
+    100% {
+        filter: brightness(1) saturate(1);
+        opacity: 1;
+    }
+    88%,
+    89% {
+        filter: brightness(1.7) saturate(2) hue-rotate(15deg);
+        opacity: 0.8;
+    }
+    90% {
+        filter: brightness(0.5) saturate(0.4);
+        opacity: 0.85;
+    }
+    92%,
+    93% {
+        filter: brightness(1.3) saturate(1.8) hue-rotate(-12deg);
+        opacity: 0.9;
+    }
+    94%,
+    95% {
+        filter: brightness(0.7);
+        opacity: 0.95;
+    }
+}
