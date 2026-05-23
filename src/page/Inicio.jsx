@@ -6,7 +6,7 @@ import "../styles/pages/Inicio.css";
 
 export default function Inicio() {
     return (
-        <main className="main">
+        <main className="main-inicio">
             <SeccionInicial />
             <SeccionServicios />
             <SeccionProceso />
