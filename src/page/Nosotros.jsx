@@ -1,6 +1,13 @@
 import PixelSnow from "../animations/PixelSnow/PixelSnow.jsx";
 import "../styles/pages/Nosotros.css";
 
+import DonGastling from "../assets/ghastling.jpg";
+import ReactIcon from "../assets/react.svg";
+import ViteIcon from "../assets/vite.svg";
+import NodeIcon from "../assets/nodejs.svg";
+import ExpressIcon from "../assets/expressjs.svg";
+import MongoIcon from "../assets/mongodb.svg";
+
 export default function Nosotros() {
     return (
         <main className="main-nosotros">
@@ -62,7 +69,61 @@ export default function Nosotros() {
                     </div>
                     <div className="nosotros-descriptions-right">
                         <div className="nosotros-grid">
-                            <div className="nosotros-grid-box"></div>
+                            <div className="nosotros-grid-box">
+                                <div className="logo">
+                                    <img
+                                        src={DonGastling}
+                                        alt="Logo de DonGhastling"
+                                    />
+                                </div>
+                                <h2 className="name">DonGhastling</h2>
+                                <p className="position">
+                                    Desarrollador Principal
+                                </p>
+                                <p className="description">
+                                    Desarrollador web full stack MERN. Construyo
+                                    soluciones digitales que generan impacto
+                                    real.
+                                </p>
+                                <div className="technologies">
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img src={ReactIcon} alt="React" />
+                                        </span>
+                                        <span className="name">React</span>
+                                    </div>
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img src={ViteIcon} alt="Vite" />
+                                        </span>
+                                        <span className="name">Vite</span>
+                                    </div>
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img src={NodeIcon} alt="Node.js" />
+                                        </span>
+                                        <span className="name">Node.js</span>
+                                    </div>
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img
+                                                src={ExpressIcon}
+                                                alt="Express.js"
+                                            />
+                                        </span>
+                                        <span className="name">Express.js</span>
+                                    </div>
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img
+                                                src={MongoIcon}
+                                                alt="MongoDB"
+                                            />
+                                        </span>
+                                        <span className="name">MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
                             <div className="nosotros-grid-box"></div>
                         </div>
                     </div>

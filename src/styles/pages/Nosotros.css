@@ -65,7 +65,7 @@
     gap: 28px;
 }
 
-.nosotros-content h2 {
+.nosotros-descriptions-left h2 {
     font-family: var(--font-pixel-first);
     font-size: clamp(14px, 2vw, 26px);
     color: var(--color-neutral-primary);
@@ -109,7 +109,10 @@
 }
 
 .nosotros-grid-box {
-    height: 250px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     border: 3px solid var(--color-primary);
     box-shadow: 0 0 14px rgba(26, 111, 255, 0.2);
     background-color: rgba(13, 17, 23, 0.5);
@@ -121,6 +124,99 @@
 .nosotros-grid-box:hover {
     transform: translate(-4px, -4px);
     box-shadow: 6px 6px 0 var(--color-primary);
+}
+
+/* card — photo */
+.nosotros-grid-box .logo {
+    width: 72px;
+    height: 72px;
+    border: 3px solid var(--color-primary);
+    box-shadow: 3px 3px 0 var(--color-secondary);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.nosotros-grid-box .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+    display: block;
+}
+
+/* card — name */
+.nosotros-grid-box h2.name {
+    font-family: var(--font-pixel-first);
+    font-size: clamp(10px, 1.2vw, 14px);
+    color: var(--color-neutral-primary);
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-shadow: 0 0 12px var(--color-primary);
+    margin: 0;
+}
+
+/* card — position */
+.nosotros-grid-box .position {
+    font-family: var(--font-pixel-second);
+    font-size: 14px;
+    color: var(--color-accent);
+    text-shadow: 0 0 8px var(--color-accent);
+    margin: 0;
+}
+
+/* card — description */
+.nosotros-grid-box .description {
+    font-family: var(--font-pixel-third);
+    font-size: 18px;
+    color: var(--color-neutral-secondary);
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+}
+
+/* card — technologies */
+.nosotros-grid-box .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.nosotros-grid-box .technology {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border: 2px solid var(--color-primary);
+    background-color: rgba(26, 111, 255, 0.08);
+    transition: background-color 0.05s ease, box-shadow 0.05s ease;
+}
+
+.nosotros-grid-box .technology:hover {
+    background-color: rgba(26, 111, 255, 0.18);
+    box-shadow: 2px 2px 0 var(--color-primary);
+}
+
+.nosotros-grid-box .technology .icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.nosotros-grid-box .technology .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+.nosotros-grid-box .technology .name {
+    font-family: var(--font-pixel-second);
+    font-size: 13px;
+    color: var(--color-neutral-secondary);
 }
 
 @keyframes nosotros-blink {
