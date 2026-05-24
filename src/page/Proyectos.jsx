@@ -1,7 +1,9 @@
 import PixelBlast from "../animations/PixelBlast/PixelBlast.jsx";
 import "../styles/pages/Proyectos.css";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Proyectos() {
+    const { t } = useLanguage();
     return (
         <main className="main-projects">
             <div className="main-section-back">
@@ -28,17 +30,15 @@ export default function Proyectos() {
             <section className="projects-content">
                 <div className="projects-label">
                     <span className="cursor"></span>
-                    <span className="text">PROYECTOS</span>
+                    <span className="text">{t.projects.label}</span>
                     <span className="nexbit">NEXBIT</span>
                 </div>
                 <h2>
-                    PROYECTOS QUE
+                    {t.projects.title.line1}
                     <br />
-                    HABLAN POR NOSOTROS
+                    {t.projects.title.line2}
                 </h2>
-                <p className="projects-description">
-                    Soluciones reales para negocios reales
-                </p>
+                <p className="projects-description">{t.projects.desc}</p>
                 <div className="projects-grid">
                     <div className="projects-grid-box"></div>
                     <div className="projects-grid-box"></div>

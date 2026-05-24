@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 
 import PixelSnow from "../animations/PixelSnow/PixelSnow.jsx";
 import "../styles/components/SeccionInicial.css";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function SeccionInicial() {
+    const { t } = useLanguage();
+
     return (
         <section className="main-section-initial">
             <div className="main-section-back">
@@ -26,35 +29,28 @@ export default function SeccionInicial() {
                 <div className="initial-left">
                     <div className="hero-label">
                         <span className="cursor"></span>
-                        <span className="blink_">SISTEMA ONLINE</span>
-                        <span className="nexbit">
-                            // [ NEXBIT SOFTWARE SOLUTIONS ]
-                        </span>
+                        <span className="blink_">{t.hero.label}</span>
+                        <span className="nexbit">{t.hero.system}</span>
                     </div>
                     <h1>
-                        TU NEGOCIO
+                        {t.hero.h1a}
                         <br />
-                        <span className="initial-h1-span">MERECE ESTAR</span>
+                        <span className="initial-h1-span">{t.hero.h1b}</span>
                         <br />
                         <span className="initial-h1-span animation">
-                            EN INTERNET.
+                            {t.hero.h1c}
                         </span>
                     </h1>
-                    <p className="hero-content">
-                        En NEXTBITSS desarrollamos soluciones digitales a medida
-                        para impulsar tu negocio en el mundo online. Desde
-                        sitios web atractivos hasta aplicaciones personalizadas,
-                        estamos aquí para ayudarte a destacar en la era digital.
-                    </p>
+                    <p className="hero-content">{t.hero.desc}</p>
                     <div className="hero-actions">
                         <Link to="/projects">
                             <button className="btn btn-primary">
-                                Ver Proyectos
+                                {t.hero.btnProjects}
                             </button>
                         </Link>
                         <Link to="/aboutus">
                             <button className="btn btn-secondary">
-                                Sobre Nosotros
+                                {t.hero.btnAbout}
                             </button>
                         </Link>
                     </div>
