@@ -1,5 +1,6 @@
 import PixelSnow from "../animations/PixelSnow/PixelSnow.jsx";
 import "../styles/pages/Nosotros.css";
+import { useLanguage } from "../context/LanguageContext";
 
 import DonGastling from "../assets/ghastling.jpg";
 import ReactIcon from "../assets/react.svg";
@@ -9,6 +10,7 @@ import ExpressIcon from "../assets/expressjs.svg";
 import MongoIcon from "../assets/mongodb.svg";
 
 export default function Nosotros() {
+    const { t } = useLanguage();
     return (
         <main className="main-nosotros">
             <div className="main-section-back">
@@ -35,36 +37,24 @@ export default function Nosotros() {
             <section className="nosotros-content">
                 <div className="nosotros-label">
                     <span className="cursor"></span>
-                    <span className="text">NOSOTROS</span>
+                    <span className="text">{t.about.label}</span>
                     <span className="nexbit">NEXBIT</span>
                 </div>
                 <div className="nosotros-grids">
                     <div className="nosotros-descriptions-left">
                         <h2>
-                            JOVENES,
+                            {t.about.title.line1}
                             <br />
-                            APASIONADOS
+                            {t.about.title.line2}
                             <br />
-                            Y ENFOCADOS
+                            {t.about.title.line3}
                             <br />
-                            EN RESULTADOS
+                            {t.about.title.line4}
                         </h2>
-                        <p className="nosotros-description">
-                            NexBit nació con una misión clara: ayudar a los
-                            negocios locales a crecer en el mundo digital sin
-                            gastar una fortuna ni perderse en tecnicismos.
-                        </p>
-                        <p className="nosotros-description">
-                            Somos un equipo joven que combina creatividad con
-                            tecnología de punta. Tu negocio nos importa tanto
-                            como a ti — no somos solo proveedores, somos tu
-                            socio digital.
-                        </p>
+                        <p className="nosotros-description">{t.about.desc1}</p>
+                        <p className="nosotros-description">{t.about.desc2}</p>
                         <div className="nosotros-final">
-                            <p>
-                                "Cada negocio local merece tener la misma
-                                presencia digital que las grandes marcas."
-                            </p>
+                            <p>{t.about.quote}</p>
                         </div>
                     </div>
                     <div className="nosotros-descriptions-right">
@@ -78,12 +68,10 @@ export default function Nosotros() {
                                 </div>
                                 <h2 className="name">DonGhastling</h2>
                                 <p className="position">
-                                    Desarrollador Principal
+                                    {t.about.team[0].position}
                                 </p>
                                 <p className="description">
-                                    Desarrollador web full stack MERN. Construyo
-                                    soluciones digitales que generan impacto
-                                    real.
+                                    {t.about.team[0].desc}
                                 </p>
                                 <div className="technologies">
                                     <div className="technology">

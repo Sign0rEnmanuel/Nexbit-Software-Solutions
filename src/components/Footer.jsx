@@ -1,8 +1,11 @@
 import logo from "../assets/nexbit-logo-pixel-dark.svg";
 import gif from "../assets/donghastling.gif";
 import "../styles/components/Footer.css";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Footer() {
+    const { t } = useLanguage();
+
     return (
         <footer className="footer">
             <img className="footer-bg-logo" src={logo} aria-hidden="true" alt="" />
@@ -12,10 +15,10 @@ export default function Footer() {
                     <p className="footer-text">
                         © 2026 NEXBITSS SOFTWARE SOLUTIONS.
                         <br />
-                        Todos los derechos reservados.
+                        {t.footer.rights}
                     </p>
                     <p className="footer-madewithlove">
-                        Hecho con amor por{" "}
+                        {t.footer.madeBy}{" "}
                         <a
                             href="https://github.com/Sign0rEnmanuel"
                             target="_blank"

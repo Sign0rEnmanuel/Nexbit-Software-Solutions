@@ -1,7 +1,11 @@
+import React from "react";
 import "../styles/components/SeccionProceso.css";
 import PixelSnow from "../animations/PixelSnow/PixelSnow.jsx";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function SeccionProceso() {
+    const { t } = useLanguage();
+
     return (
         <section className="main-section-process">
             <div className="main-section-back">
@@ -23,52 +27,27 @@ export default function SeccionProceso() {
             <div className="process-content">
                 <div className="process-label">
                     <span className="process-marker">›</span>
-                    <span className="process-text">PROCESO</span>
+                    <span className="process-text">{t.process.label}</span>
                 </div>
                 <h2 className="process-title">
-                    ASÍ TRABAJAMOS
+                    {t.process.title.line1}
                     <br />
-                    CONTIGO
+                    {t.process.title.line2}
                 </h2>
-                <p className="process-description">
-                    Simple, transparente y sin sorpresas.
-                </p>
+                <p className="process-description">{t.process.desc}</p>
                 <div className="process-flex">
-                    <div className="process-flex-box">
-                        <span className="process-number">01</span>
-                        <h3 className="process-step-title">CONVERSAMOS</h3>
-                        <p className="process-step-desc">
-                            Nos cuentas sobre tu negocio y lo que necesitas. Sin
-                            tecnicismos.
-                        </p>
-                    </div>
-                    <span className="process-arrow">›</span>
-                    <div className="process-flex-box">
-                        <span className="process-number">02</span>
-                        <h3 className="process-step-title">PLANIFICAMOS</h3>
-                        <p className="process-step-desc">
-                            Propuesta clara: qué hacemos, cuánto cuesta y en
-                            cuánto tiempo.
-                        </p>
-                    </div>
-                    <span className="process-arrow">›</span>
-                    <div className="process-flex-box">
-                        <span className="process-number">03</span>
-                        <h3 className="process-step-title">CONSTRUIMOS</h3>
-                        <p className="process-step-desc">
-                            Desarrollamos tu sitio con actualizaciones
-                            frecuentes.
-                        </p>
-                    </div>
-                    <span className="process-arrow">›</span>
-                    <div className="process-flex-box">
-                        <span className="process-number">04</span>
-                        <h3 className="process-step-title">LANZAMOS</h3>
-                        <p className="process-step-desc">
-                            Publicamos y te enseñamos a usarlo. Seguimos contigo
-                            después.
-                        </p>
-                    </div>
+                    {t.process.steps.map((step, i) => (
+                        <React.Fragment key={step.num}>
+                            <div className="process-flex-box">
+                                <span className="process-number">{step.num}</span>
+                                <h3 className="process-step-title">{step.title}</h3>
+                                <p className="process-step-desc">{step.desc}</p>
+                            </div>
+                            {i < t.process.steps.length - 1 && (
+                                <span className="process-arrow">›</span>
+                            )}
+                        </React.Fragment>
+                    ))}
                 </div>
             </div>
         </section>
