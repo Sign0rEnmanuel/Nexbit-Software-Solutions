@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../assets/nexbit-logo-pixel-dark.svg";
@@ -6,18 +7,21 @@ import { useLanguage } from "../context/LanguageContext";
 
 export default function Navbar() {
     const { language, setLanguage, t } = useLanguage();
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const closeMenu = () => setMenuOpen(false);
 
     return (
         <header className="header">
             <img className="header-logo" src={logo} alt="NexBitSS" />
-            <nav className="header-nav-link">
-                <Link to="/">
+            <nav className={`header-nav-link${menuOpen ? " open" : ""}`}>
+                <Link to="/" onClick={closeMenu}>
                     <button className="nav-button">{t.navbar.home}</button>
                 </Link>
-                <Link to="projects">
+                <Link to="projects" onClick={closeMenu}>
                     <button className="nav-button">{t.navbar.projects}</button>
                 </Link>
-                <Link to="aboutus">
+                <Link to="aboutus" onClick={closeMenu}>
                     <button className="nav-button">{t.navbar.about}</button>
                 </Link>
             </nav>
@@ -39,6 +43,15 @@ export default function Navbar() {
                 >
                     <button className="wht-button">WhatsApp</button>
                 </a>
+                <button
+                    className={`hamburger-btn${menuOpen ? " is-open" : ""}`}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Menu"
+                >
+                    <span className="hb-bar"></span>
+                    <span className="hb-bar"></span>
+                    <span className="hb-bar"></span>
+                </button>
             </nav>
         </header>
     );

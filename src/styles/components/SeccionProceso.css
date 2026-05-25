@@ -114,3 +114,23 @@
     color: var(--color-neutral-secondary);
     line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+    .process-content {
+        padding: 40px 24px;
+    }
+    .process-flex {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .process-flex-box {
+        min-height: auto;
+        width: 100%;
+    }
+    .process-arrow {
+        transform: rotate(90deg);
+        margin-bottom: 0;
+        align-self: flex-start;
+        margin-left: 24px;
+    }
+}

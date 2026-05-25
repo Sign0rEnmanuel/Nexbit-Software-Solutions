@@ -1,4 +1,3 @@
-import PixelSnow from "../animations/PixelSnow/PixelSnow.jsx";
 import "../styles/pages/Nosotros.css";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -13,27 +12,6 @@ export default function Nosotros() {
     const { t } = useLanguage();
     return (
         <main className="main-nosotros">
-            <div className="main-section-back">
-                <PixelSnow
-                    variant="round"
-                    pixelSize={5}
-                    color="#9aa0a8"
-                    patternScale={4.5}
-                    patternDensity={1.45}
-                    pixelSizeJitter={1.95}
-                    enableRipples={false}
-                    rippleSpeed={0.4}
-                    rippleThickness={0.12}
-                    rippleIntensityScale={1.5}
-                    liquid={false}
-                    liquidStrength={0.12}
-                    liquidRadius={1.2}
-                    liquidWobbleSpeed={5}
-                    speed={2.1}
-                    edgeFade={0.25}
-                    transparent
-                />
-            </div>
             <section className="nosotros-content">
                 <div className="nosotros-label">
                     <span className="cursor"></span>

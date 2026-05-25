@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-import PixelSnow from "../animations/PixelSnow/PixelSnow.jsx";
 import "../styles/components/SeccionInicial.css";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -9,22 +8,6 @@ export default function SeccionInicial() {
 
     return (
         <section className="main-section-initial">
-            <div className="main-section-back">
-                <PixelSnow
-                    color="#9aa0a8"
-                    flakeSize={0.01}
-                    minFlakeSize={1.25}
-                    pixelResolution={200}
-                    speed={0.1}
-                    density={0.75}
-                    direction={220}
-                    brightness={2.5}
-                    depthFade={8}
-                    farPlane={20}
-                    gamma={0.4545}
-                    variant="square"
-                />
-            </div>
             <div className="initial-content">
                 <div className="initial-left">
                     <div className="hero-label">

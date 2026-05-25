@@ -228,3 +228,27 @@
         opacity: 0;
     }
 }
+
+@media (max-width: 768px) {
+    .main-nosotros {
+        margin-top: 120px;
+    }
+    .nosotros-content {
+        padding: 40px 24px;
+    }
+    .nosotros-grids {
+        grid-template-columns: 1fr;
+    }
+    .nosotros-grid {
+        grid-template-columns: 1fr;
+    }
+    .nosotros-description {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nosotros-content {
+        padding: 30px 18px;
+    }
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/components/SeccionProceso.css";
-import PixelSnow from "../animations/PixelSnow/PixelSnow.jsx";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function SeccionProceso() {
@@ -8,22 +7,6 @@ export default function SeccionProceso() {
 
     return (
         <section className="main-section-process">
-            <div className="main-section-back">
-                <PixelSnow
-                    color="#7c3aed"
-                    flakeSize={0.01}
-                    minFlakeSize={1.25}
-                    pixelResolution={200}
-                    speed={0.1}
-                    density={0.75}
-                    direction={220}
-                    brightness={2.5}
-                    depthFade={8}
-                    farPlane={20}
-                    gamma={0.4545}
-                    variant="square"
-                />
-            </div>
             <div className="process-content">
                 <div className="process-label">
                     <span className="process-marker">›</span>

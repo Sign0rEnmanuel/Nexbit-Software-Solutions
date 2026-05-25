@@ -104,6 +104,17 @@
     z-index: 1;
 }
 
+@media (max-width: 768px) {
+    .footer {
+        padding: 36px 24px;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+}
+
 @keyframes gif-flicker {
     0%,
     87%,

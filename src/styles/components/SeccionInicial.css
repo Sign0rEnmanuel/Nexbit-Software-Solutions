@@ -196,6 +196,46 @@ h1 .animation:hover {
     box-shadow: 5px 5px 0 #7c3aed9d;
 }
 
+@media (max-width: 768px) {
+    .main-section-initial {
+        height: auto;
+        min-height: calc(100vh - 120px);
+    }
+    .initial-content {
+        flex-direction: column;
+        padding: 30px 24px;
+        gap: 0;
+        align-items: start;
+        justify-content: center;
+    }
+    .initial-left {
+        max-width: 100%;
+    }
+    .initial-right {
+        display: none;
+    }
+    .hero-label {
+        font-size: 16px;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+    .hero-content {
+        font-size: 17px;
+    }
+    .hero-actions {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-label .nexbit {
+        display: none;
+    }
+    .initial-content {
+        padding: 24px 18px;
+    }
+}
+
 @keyframes nss-float {
     0%,
     100% {
