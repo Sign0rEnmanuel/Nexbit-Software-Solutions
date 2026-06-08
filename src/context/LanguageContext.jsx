@@ -1,5 +1,9 @@
 import { createContext, useContext, useState } from "react";
 
+import imgTodoList from "../assets/projects/todolistapp.png";
+import imgNexBitSS from "../assets/projects/nexbitss.png";
+import imgPetsLive from "../assets/projects/petslive.png";
+
 const translations = {
     es: {
         navbar: {
@@ -57,7 +61,7 @@ const translations = {
         process: {
             label: "PROCESO",
             title: { line1: "ASÍ TRABAJAMOS", line2: "CONTIGO" },
-            desc: "Simple, transparente y sin sorpresas.",
+            final: "Tenemos mas proyectos en desarrollo y prontos para lanzar. ¡Únete a nosotros!",
             steps: [
                 {
                     num: "01",
@@ -89,6 +93,30 @@ const translations = {
             label: "PROYECTOS",
             title: { line1: "PROYECTOS QUE", line2: "HABLAN POR NOSOTROS" },
             desc: "Soluciones reales para negocios reales",
+            final: "Tenemos más proyectos en desarrollo y prontos para lanzar. ¡Únete a nosotros!",
+            items: [
+                {
+                    title: "Todo-List-App",
+                    desc: "App de lista de tareas basico con React Native y Express",
+                    link: "https://todo-list-app-psi-beryl.vercel.app",
+                    src: imgTodoList,
+                    alt: "Todo-List-App",
+                },
+                {
+                    title: "NexBitSS",
+                    desc: "Sitio web oficial de NexBitSS Software Solutions, desarrollado con React + Vite con estética pixel/arcade retro.",
+                    link: "https://nexbitss.vercel.app/",
+                    src: imgNexBitSS,
+                    alt: "NexBitSS",
+                },
+                {
+                    title: "PetsLive",
+                    desc: "Una plataforma de venta de animales para adultos y niños de todo el mundo.",
+                    link: "https://github.com/Sign0rEnmanuel/Pets-Live",
+                    src: imgPetsLive,
+                    alt: "PetsLive",
+                },
+            ],
         },
         about: {
             label: "NOSOTROS",
@@ -105,6 +133,10 @@ const translations = {
                 {
                     position: "Desarrollador y Fundador",
                     desc: "Desarrollador web full stack MERN. Construyo soluciones digitales que generan impacto real.",
+                },
+                {
+                    position: "Desarrollador y Jefe",
+                    desc: "Desarrollador web full satck expermientado con grandes habbilidades y conocimientos. Genero resultados reales con tecnología de punta.",
                 },
             ],
         },
@@ -198,6 +230,30 @@ const translations = {
             label: "PROJECTS",
             title: { line1: "PROJECTS THAT", line2: "SPEAK FOR US" },
             desc: "Real solutions for real businesses",
+            final: "We have more projects in development and ready to launch. Join us!",
+            items: [
+                {
+                    title: "Todo-List-App",
+                    desc: "Basic task list app built with React Native and Express",
+                    link: "https://todo-list-app-psi-beryl.vercel.app",
+                    src: imgTodoList,
+                    alt: "Todo-List-App",
+                },
+                {
+                    title: "NexBitSS",
+                    desc: "Official website of NexBitSS Software Solutions, built with React + Vite with a retro pixel/arcade aesthetic.",
+                    link: "https://nexbitss.vercel.app/",
+                    src: imgNexBitSS,
+                    alt: "NexBitSS",
+                },
+                {
+                    title: "PetsLive",
+                    desc: "An online platform to sell animals for adults and children of all countries.",
+                    link: "https://github.com/Sign0rEnmanuel/Pets-Live",
+                    src: imgPetsLive,
+                    alt: "PetsLive",
+                },
+            ],
         },
         about: {
             label: "ABOUT US",
@@ -214,6 +270,10 @@ const translations = {
                 {
                     position: "Developer & Founder",
                     desc: "Full stack MERN web developer. I build digital solutions that generate real impact.",
+                },
+                {
+                    position: "Developer & CEO",
+                    desc: "Full stack MERN web developer with great experience and knowledge. I build real results with cutting-edge technology.",
                 },
             ],
         },
@@ -307,6 +367,30 @@ const translations = {
             label: "PROJETOS",
             title: { line1: "PROJETOS QUE", line2: "FALAM POR NÓS" },
             desc: "Soluções reais para negócios reais",
+            final: "Temos mais projetos em desenvolvimento e prontos para lançar. Junte-se a nós!",
+            items: [
+                {
+                    title: "Todo-List-App",
+                    desc: "App básico de lista de tarefas com React Native e Express",
+                    link: "https://todo-list-app-psi-beryl.vercel.app",
+                    src: imgTodoList,
+                    alt: "Todo-List-App",
+                },
+                {
+                    title: "NexBitSS",
+                    desc: "Site oficial da NexBitSS Software Solutions, desenvolvido com React + Vite com estética pixel/arcade retrô.",
+                    link: "https://nexbitss.vercel.app/",
+                    src: imgNexBitSS,
+                    alt: "NexBitSS",
+                },
+                {
+                    title: "PetsLive",
+                    desc: "Uma plataforma de venda de animais para adultos e crianças de todos os países.",
+                    link: "https://github.com/Sign0rEnmanuel/Pets-Live",
+                    src: imgPetsLive,
+                    alt: "PetsLive",
+                },
+            ],
         },
         about: {
             label: "SOBRE NÓS",
@@ -323,6 +407,10 @@ const translations = {
                 {
                     position: "Desenvolvedor e Fundador",
                     desc: "Desenvolvedor web full stack MERN. Construo soluções digitais que geram impacto real.",
+                },
+                {
+                    position: "Desenvolvedor e CEO",
+                    desc: "Desenvolvedor web full stack experiente com grandes habilidades e conhecimentos. Construo resultados reais com tecnologia de ponta.",
                 },
             ],
         },

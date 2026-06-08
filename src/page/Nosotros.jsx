@@ -2,11 +2,14 @@ import "../styles/pages/Nosotros.css";
 import { useLanguage } from "../context/LanguageContext";
 
 import DonGastling from "../assets/ghastling.jpg";
+import Ramzoc from "../assets/ramzoc.jpg";
 import ReactIcon from "../assets/react.svg";
+import TypeScript from "../assets/typescript.svg";
 import ViteIcon from "../assets/vite.svg";
 import NodeIcon from "../assets/nodejs.svg";
 import ExpressIcon from "../assets/expressjs.svg";
 import MongoIcon from "../assets/mongodb.svg";
+import MySQL from "../assets/mysql.svg";
 
 export default function Nosotros() {
     const { t } = useLanguage();
@@ -90,7 +93,62 @@ export default function Nosotros() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="nosotros-grid-box"></div>
+                            <div className="nosotros-grid-box">
+                                <div className="logo">
+                                    <img src={Ramzoc} alt="Logo de Ramzoc" />
+                                </div>
+                                <h2 className="name">Ramzoc</h2>
+                                <p className="position">
+                                    {t.about.team[1].position}
+                                </p>
+                                <p className="description">
+                                    {t.about.team[1].desc}
+                                </p>
+                                <div className="technologies">
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img src={ReactIcon} alt="React" />
+                                        </span>
+                                        <span className="name">React</span>
+                                    </div>
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img src={ViteIcon} alt="Vite" />
+                                        </span>
+                                        <span className="name">Vite</span>
+                                    </div>
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img src={NodeIcon} alt="Node.js" />
+                                        </span>
+                                        <span className="name">Node.js</span>
+                                    </div>
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img
+                                                src={ExpressIcon}
+                                                alt="Express.js"
+                                            />
+                                        </span>
+                                        <span className="name">Express.js</span>
+                                    </div>
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img
+                                                src={TypeScript}
+                                                alt="TypeScript"
+                                            />
+                                        </span>
+                                        <span className="name">TypeScript</span>
+                                    </div>
+                                    <div className="technology">
+                                        <span className="icon">
+                                            <img src={MySQL} alt="MySQL" />
+                                        </span>
+                                        <span className="name">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
