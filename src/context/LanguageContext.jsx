@@ -98,7 +98,7 @@ const translations = {
                 {
                     title: "Todo-List-App",
                     desc: "App de lista de tareas basico con React Native y Express",
-                    link: "https://todo-list-app-psi-beryl.vercel.app",
+                    link: "https://todo-list-three-delta-92.vercel.app/",
                     src: imgTodoList,
                     alt: "Todo-List-App",
                 },
@@ -235,7 +235,7 @@ const translations = {
                 {
                     title: "Todo-List-App",
                     desc: "Basic task list app built with React Native and Express",
-                    link: "https://todo-list-app-psi-beryl.vercel.app",
+                    link: "https://todo-list-three-delta-92.vercel.app/",
                     src: imgTodoList,
                     alt: "Todo-List-App",
                 },
@@ -372,7 +372,7 @@ const translations = {
                 {
                     title: "Todo-List-App",
                     desc: "App básico de lista de tarefas com React Native e Express",
-                    link: "https://todo-list-app-psi-beryl.vercel.app",
+                    link: "https://todo-list-three-delta-92.vercel.app/",
                     src: imgTodoList,
                     alt: "Todo-List-App",
                 },
